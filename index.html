@@ -37,5 +37,6 @@ It is open-source and accessible to all. With Monero, you are your own bank. Onl
 <script>
 const percents=document.querySelector("#percents"),clock=document.querySelector(".meter-clock"),active=document.querySelector(".meter-active");function rangeChange(e){clock.style.transform="rotate("+(180*e/100-90)+"deg)",percents.innerText=e+"%",active.style.stroke=e<=75?"#e65100":"#f44336",active.style["stroke-dasharray"]=`${157*e/100} ${314-157*e/100}`}function getCPU(){prev=25;const e=()=>20*Math.random()-10,t=25*Math.random()+0>24,r=t?95:prev+e(),n=t?85:prev+e(),a=Math.random()*(r-n)+n,c=Math.abs(a);return Math.round(c)}setInterval(()=>{rangeChange(getCPU())},1e3);
 </script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="8721668ff100699d72ab9dd6-|49" defer=""></script></body>
 </body>
 </html>
